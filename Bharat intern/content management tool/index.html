@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Management Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Content Management Tool</h1>
+    </header>
+    <main>
+        <div id="editor">
+            <div id="text-editor">
+                <h2>Add Text</h2>
+                <textarea id="text-input" placeholder="Enter text here..."></textarea>
+                <button id="add-text-btn">Add Text</button>
+            </div>
+            <div id="image-editor">
+                <h2>Add Image</h2>
+                <input type="file" id="image-input" accept="image/*">
+                <button id="add-image-btn">Add Image</button>
+            </div>
+            <div id="video-editor">
+                <h2>Add Video</h2>
+                <input type="text" id="video-url-input" placeholder="Enter video URL...">
+                <button id="add-video-btn">Add Video</button>
+            </div>
+        </div>
+        <div id="Content-preview">
+            <h2>Content Preview</h2>
+            <div id="content-container"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
